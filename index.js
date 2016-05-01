@@ -85,7 +85,6 @@ var Hole = function(options) {
     return this;
   };
 
-
   socket.bind(options.bind, function() {
     // present myself
     var message = JSON.stringify({
@@ -94,6 +93,7 @@ var Hole = function(options) {
     });
     socket.send(message, 0, message.length, self.options.port, self.options.address);
   });
+
   socket.pipe = pipe;
 };
 

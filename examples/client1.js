@@ -8,11 +8,7 @@ var hole = new Hole({
 });
 
 hole.on('ready', function() {
-  hole.on('punch', function(socket) {
-    console.log("now we are connected!");
-    process.stdin.pipe(socket).pipe(process.stdout);
-  });
-
-  // todo replace with present myself
-  hole.punch('client2');
+  hole.punch("client1");
+}).on("punch", function(socket) {
+  process.stdin.pipe(socket).pipe(process.stdout);
 });
