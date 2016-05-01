@@ -118,7 +118,7 @@ Hole.prototype.clearInterval = function() {
   }
 };
 
-Hole.prototype.create = function(name) {
+Hole.prototype.punch = function(name) {
   var self = this;
   self.intervalId = setInterval(function() {
     var data = JSON.stringify({

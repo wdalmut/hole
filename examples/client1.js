@@ -15,5 +15,5 @@ hole.on('ready', function() {
   });
 
   // todo replace with present myself
-  hole.create('client2');
+  hole.punch('client2');
 });

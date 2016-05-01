@@ -20,7 +20,7 @@ hole.on('ready', function() {
     process.stdin.pipe(socket);
   });
 
-  hole.create("client1");
+  hole.punch("client1");
 });
 ```
 
