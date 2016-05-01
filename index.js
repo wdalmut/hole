@@ -69,21 +69,21 @@ var Hole = function(options, callback) {
     return true;
   };
 
-	socket.end = function () {
-		setImmediate(function () {
-			socket.close();
-		});
-	};
+  socket.end = function () {
+    setImmediate(function () {
+      socket.close();
+    });
+  };
 
-	socket.pause = function () {
-		socket.paused = true;
-		return this;
-	};
+  socket.pause = function () {
+    socket.paused = true;
+    return this;
+  };
 
-	socket.resume = function () {
-		socket.paused = false;
-		return this;
-	};
+  socket.resume = function () {
+    socket.paused = false;
+    return this;
+  };
 
 
   socket.bind(options.bind, function() {

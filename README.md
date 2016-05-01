@@ -16,8 +16,7 @@ hole.on('ready', function() {
   hole.on('punch', function(socket) {
     console.log("now we are connected!");
 
-    socket.pipe(process.stdout);
-    process.stdin.pipe(socket);
+    process.stdin.pipe(socket).pipe(process.stdout);
   });
 
   hole.punch("client1");
