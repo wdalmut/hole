@@ -4,9 +4,9 @@ var process = require('process');
 var EventEmitter = require('events');
 var pipe = require('stream').prototype.pipe;
 
-var Hole = function(options, callback) {
+var Hole = function(options) {
   if (!(this instanceof Hole)) {
-    return new Hole(name, options);
+    return new Hole(options);
   }
 
   var self = this;
