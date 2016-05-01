@@ -1,6 +1,5 @@
 var util = require('util');
 var _ = require('underscore');
-var process = require('process');
 var EventEmitter = require('events');
 var pipe = require('stream').prototype.pipe;
 
